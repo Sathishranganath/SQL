@@ -12,10 +12,10 @@ VALUES
 ('E01','Risven','Starven',2500),
 ('E02','Suren','Madhavan',2750),
 ('E03','Sathish','Ranganathan',2300);
-
+commit;
 
 --Retrieve all data from a Table Employees
 
 SELECT * FROM Employees;
 
---Retrieve Data from 
+--Retrieve Data from employees

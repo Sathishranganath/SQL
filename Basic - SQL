@@ -42,13 +42,15 @@ commit;
 
 SELECT * FROM DEPT;
 
---Performing Joins between the tables to retrieve only selected records.
---Requirement is to retrieve only the Employee First Name, last Name and Department they belong to.
+
+JOINs:
+--Requirement is to retrieve only the Employee First Name, last Name and Department they belong.
+--Performing Inner Join as this retrieves the records from both table based on the common column.
 
 SELECT EMPLOYEES.FIRSTNAME, EMPLOYEES.LASTNAME,DEPT_NAME  FROM 
 EMPLOYEES inner join DEPT
 ON EMPLOYEES.EMP_ID = DEPT.EMP_ID;
 
 
-
+--Requirement is to retrieve the 
 

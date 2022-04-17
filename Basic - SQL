@@ -6,7 +6,6 @@ Lastname varchar(20),
 Salary number(20)
 );
 
-
 --Add Data to the Employee Table
 INSERT INTO Employees
 VALUES

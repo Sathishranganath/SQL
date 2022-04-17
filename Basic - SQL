@@ -1,0 +1,22 @@
+--Before Starting with the Queries, First lets Create a table Employees
+CREATE TABLE Employees (
+EMP_ID varchar(80),
+Firstname varchar(80),
+Lastname varchar(20),
+Salary number(20)
+);
+
+
+--Add Data to the Employee Table
+INSERT INTO Employees
+VALUES
+('E01','Risven','Starven',2500),
+('E02','Suren','Madhavan',2750),
+('E03','Sathish','Ranganathan',2300);
+
+
+--Retrieve all data from a Table Employees
+
+SELECT * FROM Employees;
+
+--Retrieve Data from 

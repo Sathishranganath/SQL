@@ -14,6 +14,12 @@ VALUES
 ('E03','Sathish','Ranganathan',2300);
 commit;
 
+--Modifying Data by Deleting Employee Sathish , as we know sathish Employee Id is E03 we can use it in Where clause for filtering.
+DELETE FROM Employees where EMP_ID = 'E03';
+
+--Truncating table
+TRUNCATE TABLE Employees;
+
 --Retrieve all data from a Table Employees
 
 SELECT * FROM Employees;

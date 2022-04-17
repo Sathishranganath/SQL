@@ -1,6 +1,6 @@
 --Before Starting with the Queries, First lets Create a table Employees
 CREATE TABLE Employees (
-EMP_ID varchar(80),
+EMP_ID varchar(40),
 Firstname varchar(80),
 Lastname varchar(20),
 Salary number(20)
@@ -24,4 +24,31 @@ TRUNCATE TABLE Employees;
 
 SELECT * FROM Employees;
 
---Retrieve Data from employees
+--Creating a new Table Department
+CREATE TABLE DEPT (
+EMP_ID varchar(40),
+DEPT_NAME varchar(80)
+);
+
+--Add Data to the DEPT Table
+INSERT INTO DEPT
+VALUES
+('E01','OPERATIONS',),
+('E02','IT'),
+('E03','FINANCE');
+commit;
+
+--Selecting data from a New Table Department.
+
+SELECT * FROM DEPT;
+
+--Performing Joins between the tables to retrieve only selected records.
+--Requirement is to retrieve only the Employee First Name, last Name and Department they belong to.
+
+SELECT EMPLOYEES.FIRSTNAME, EMPLOYEES.LASTNAME,DEPT_NAME  FROM 
+EMPLOYEES inner join DEPT
+ON EMPLOYEES.EMP_ID = DEPT.EMP_ID;
+
+
+
+
